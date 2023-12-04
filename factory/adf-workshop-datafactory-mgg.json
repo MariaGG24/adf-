@@ -1,0 +1,9 @@
+{
+	"name": "adf-workshop-datafactory-mgg",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d613c292-bcde-45e2-8da4-001959b56ad1",
+		"tenantId": "d4547f1c-1c97-4c59-9007-4c58c2030467"
+	}
+}

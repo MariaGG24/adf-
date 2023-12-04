@@ -1,0 +1,25 @@
+{
+	"name": "trigger_c_1min",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "demo2-get-metadata",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2023-12-04T08:46:00",
+				"endTime": "2023-12-05T08:50:00",
+				"timeZone": "Romance Standard Time"
+			}
+		}
+	}
+}

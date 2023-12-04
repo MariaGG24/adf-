@@ -1,0 +1,45 @@
+{
+	"name": "demo2-get-metadata",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get Metadata emp",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "az_SA_inputEmp",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"lastModified",
+						"size",
+						"itemName"
+					],
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Demos"
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-12-01T08:29:39Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
